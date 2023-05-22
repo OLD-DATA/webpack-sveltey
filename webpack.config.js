@@ -17,7 +17,7 @@ module.exports = {
 		conditionNames: ['svelte', 'browser']
 	},
 	output: {
-		path: path.join(__dirname, '/public'),
+		path: path.join(__dirname, '/_site'),
 		filename: '[name].js',
 		chunkFilename: '[name].[id].js'
 	},
@@ -62,7 +62,7 @@ module.exports = {
 	devServer: {
 		hot: true,
 		static: {
-			directory: path.join(__dirname, 'public'),
+			directory: path.join(__dirname, '_site'),
 		}
 	}
 };
